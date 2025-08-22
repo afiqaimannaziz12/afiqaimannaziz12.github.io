@@ -1,0 +1,72 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .menu {
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-top: 10px; /* Space below the header */
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center; /* Center the menu items */
+            flex-wrap: wrap; /* Allow wrapping of items */
+            margin-top: 10px; /* Space below the menu */
+        }
+        nav a {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            margin: 5px; /* Space between menu boxes */
+            text-decoration: none;
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+            display: none; /* Hide all sections by default */
+        }
+        .image-gallery {
+            display: flex; /* Use flexbox to arrange images side by side */
+            flex-wrap: wrap; /* Allow images to wrap to the next line if necessary */
+            justify-content: center; /* Center the images */
+            margin: 10px 0; /* Margin above and below the gallery */
+        }
+        .image-gallery img {
+            margin: 5px; /* Space between images */
+            max-width: 30%; /* Set a maximum width for images */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .container h2 {
+            text-align: center; /* Center align the heading */
+            font-size: 2.5em; /* Increase font size */
+            color: #4CAF50; /* Change color to match the header */
+            margin-bottom: 20px; /* Space below the heading */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .active {
+            display: block; /* Show the active section */
+        }
